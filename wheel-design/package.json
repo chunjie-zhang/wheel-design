@@ -1,0 +1,19 @@
+{
+  "name": "wheel-design",
+  "version": "1.0.0",
+  "description": "这个一个基于vue的UI组件库",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chunjie-zhang/wheel-design.git"
+  },
+  "author": "张春节",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chunjie-zhang/wheel-design/issues"
+  },
+  "homepage": "https://github.com/chunjie-zhang/wheel-design#readme"
+}
