@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wheel-design</title>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_3193669_9cfjym3lvlt.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: "wd-iconfont" !important;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        :root {
+            --button-height: 32px;
+            --font-size: 14px;
+            --font-color: #999;
+            --button-bg: white;
+            --button-active-bg: #eee;
+            --border-radius: 4px;
+            --border-color: #999;
+            --border-color-hover: #666;
+        }
+        .wd-button {
+            margin: 20px;
+        }
+        body {
+            font-size: var(--font-size);
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <wd-icon name="setting"></wd-icon>
+        <wd-icon name="loading"></wd-icon>
+        <wd-button>我爱Vue</wd-button>
+        <wd-button icon="setting" loading icon-position="left">我爱Vue</wd-button>
+        <wd-button icon="download" icon-position="right">我爱Vue</wd-button>
+    </div>
+    <script src="./src/app.js"></script>
+</body>
+</html>

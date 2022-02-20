@@ -1,0 +1,36 @@
+{
+  "name": "wheel-design",
+  "version": "0.0.1",
+  "description": "基于Vue2.0搭建的UI组件库",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chunjie-zhang/wheel-design.git"
+  },
+  "keywords": [
+    "Vue",
+    "UI组件库"
+  ],
+  "author": "zhangchunjie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chunjie-zhang/wheel-design/issues"
+  },
+  "homepage": "https://github.com/chunjie-zhang/wheel-design#readme",
+  "dependencies": {
+    "vue": "^2.6.14",
+    "vue-hot-reload-api": "^2.3.4"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^3.3.0",
+    "parcel-bundler": "^1.9.2",
+    "sass": "^1.49.8",
+    "vue-template-compiler": "^2.6.14"
+  },
+  "alias": {
+    "vue" : "./node_modules/vue/dist/vue.common.js"
+  }
+}
