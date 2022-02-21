@@ -1,5 +1,5 @@
 <template>
-   <button class="wd-button" :class="{[`wd-button__icon-${iconPosition}`]: iconPosition}">
+   <button class="wd-button" :class="{[`wd-button__icon-${iconPosition}`]: iconPosition}" @click="$emit('click')">
      <wd-icon v-if="icon || loading" class="wd-button__icon" :class="{'wd-button__loading': loading}" :name="!loading ? icon : 'loading'"></wd-icon>
      <div class="wd-button__content">
        <slot></slot>
@@ -53,6 +53,7 @@ export default {
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
   background: var(--button-bg);
+  cursor: pointer;
   &:hover {
     border-color: var(--border-color-hover);
   }
