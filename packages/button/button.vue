@@ -11,6 +11,7 @@
 import wdIcon from '../icon/icon.vue';
 
 export default {
+  name: 'wd-button',
   props:{
     loading: {
       type: Boolean,
