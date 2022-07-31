@@ -35,22 +35,31 @@
     </style>
 </head>
 <body>
-    <div id="app">
-        <wd-icon name="setting"></wd-icon>
-        <wd-icon name="loading"></wd-icon>
-        <wd-button>我爱Vue</wd-button>
-        <wd-button :loading="loading" @click="loading = !loading">我爱Vue</wd-button>
-        <wd-button icon="setting" loading icon-position="left">我爱Vue</wd-button>
-        <wd-button icon="download" loading icon-position="right">我爱Vue</wd-button>
-        <wd-button-group>
-          <wd-button icon="left" icon-position="left">上一页</wd-button>
-          <wd-button>更多</wd-button>
-          <wd-button icon="right" icon-position="right">下一页</wd-button>
-        </wd-button-group>
-        <div id="test1"></div>
-        <div id="test2"></div>
-        <div id="test3"></div>
+  <div id="app">
+    <div>
+      <wd-input v-model="message"></wd-input>
+      <wd-input v-model="message" disabled></wd-input>
+      <wd-input v-model="message" readonly></wd-input>
+      <wd-input v-model="message" error="错误的"></wd-input>
+      <span>{{ message }}</span>
     </div>
-    <script src="./src/app.js"></script>
+    <div>
+      <wd-icon name="setting"></wd-icon>
+      <wd-icon name="loading"></wd-icon>
+      <wd-button>我爱Vue</wd-button>
+      <wd-button :loading="loading" @click="loading = !loading">我爱Vue</wd-button>
+      <wd-button icon="setting" loading icon-position="left">我爱Vue</wd-button>
+      <wd-button icon="download" loading icon-position="right">我爱Vue</wd-button>
+      <wd-button-group>
+        <wd-button icon="left" icon-position="left">上一页</wd-button>
+        <wd-button>更多</wd-button>
+        <wd-button icon="right" icon-position="right">下一页</wd-button>
+      </wd-button-group>
+    </div>
+      <div id="test1"></div>
+      <div id="test2"></div>
+      <div id="test3"></div>
+  </div>
+  <script src="./src/app.js"></script>
 </body>
 </html>

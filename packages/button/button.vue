@@ -37,7 +37,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @keyframes loading {
   0% { transform: rotate(0deg)};
   100% { transform: rotate(360deg)};
