@@ -56,7 +56,13 @@
         <wd-button icon="right" icon-position="right">下一页</wd-button>
       </wd-button-group>
     </div>
-      <div id="test1"></div>
+      <div id="test1">
+        <wd-row :gutter="10">
+          <wd-col :span="2" :phone="{span: 8}" :ipad="{span: 4}" :arrow-pc="{span: 5}" :pc="{span: 4}">1111</wd-col>
+          <wd-col :span="2" :phone="{span: 8}" :ipad="{span: 8}" :arrow-pc="{span: 10}" :pc="{span: 6}">2222</wd-col>
+          <wd-col :span="6" :phone="{span: 8}" :ipad="{span: 12}" :arrow-pc="{span: 9}" :pc="{span: 6}">3333</wd-col>
+        </wd-row>
+      </div>
       <div id="test2"></div>
       <div id="test3"></div>
   </div>

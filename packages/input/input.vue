@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper" :class="{error}">
+  <div class="wd-input" :class="{error}">
     <input
       :value="value"
       type="text"
@@ -11,8 +11,8 @@
       @blur="$emit('blur', $event.target.value)"
     >
     <template v-if="error">
-      <wd-icon name="error" class="icon-error"></wd-icon>
-      <span class="errorMessage">{{error}}</span>
+      <wd-icon name="error" class="wd-input__icon-error"></wd-icon>
+      <span class="wd-input__errorMessage">{{ error }}</span>
     </template>
   </div>
 </template>
@@ -50,7 +50,7 @@ export default {
   $font-size: 12px;
   $box-shadow-color: rgba(0, 0, 0, 0.5);
   $red: #F1453D;
-  .wrapper { 
+  .wd-input { 
     font-size: $font-size; display: inline-flex;
     align-items: center;
     > :not(:last-child) {
@@ -79,10 +79,10 @@ export default {
         border-color: $red;
       }
     }
-    .icon-error {
+    .wd-input__icon-error {
       fill: $red;
     }
-    .errorMessage {
+    .wd-input__errorMessage {
       color: $red;
     }
   }
