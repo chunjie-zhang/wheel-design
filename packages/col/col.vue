@@ -1,13 +1,11 @@
 <template>
-  <div
-    class="wd-col" :class="colSpan" :style="colStyle">
+  <div class="wd-col" :class="colSpan" :style="colStyle">
     <slot></slot>
   </div>
 </template>
 <script>
 let validator = (val) => {
  if (val) {
-  console.log(val);
    let keys = Object.keys(val);
     let vaild = true;
     keys.forEach((item) => {
@@ -23,14 +21,9 @@ export default {
    props: {
     span: { // 一列占整体的多少份，整体是24份
       type: [Number, String],
-      default: 12,
     },
     offset: { // 偏移量是多少
       type: [Number, String],
-    },
-    phone: { // 手机
-      type: Object,
-      validator,
     },
     ipad: { // ipad
       type: Object,
@@ -48,17 +41,18 @@ export default {
       type: Object,
       validator,
     },
+    gutter: { // col间的间隙
+      type: [Number, String],
+    },
   },
    computed: {
     colSpan() {
       return [
-        this.span ? `wd-col-${this.span}` : '',
-        this.offset ? `wd-col-offset-${this.offset}` : '',
-        this.phone ? `wd-col-phone-${this.phone.span}` : '',
-        this.ipad ? `wd-col-ipad-${this.ipad.span}` : [],
-        this.arrowPc && `wd-col-arrow-pc-${this.arrowPc.span}`,
-        this.pc ? `wd-col-pc-${this.pc.span}` : '',
-        this.widePc ? `wd-col-wide-pc-${this.widePc.span}` : '',
+        ...this.transformClass({span: this.span, offset: this.offset}),
+        ...this.transformClass(this.ipad, 'ipad'),
+        ...this.transformClass(this.arrowPc, 'arrow-pc'),
+        ...this.transformClass(this.pc, 'pc'),
+        ...this.transformClass(this.widePc, 'wide-pc'),
       ];
     }, 
     colStyle() {
@@ -70,8 +64,25 @@ export default {
   },
   data() {
    return {
-     gutter: 5, // 间隙
+    //  gutter: 0, // 间隙
    };
+  },
+  methods: {
+    // 转译css样式
+    transformClass (obj, suffix='') {
+        if (!obj) return [];
+
+        let classArr = [];
+        if (obj.span) {
+          classArr.push(`wd-col${suffix ? `-${suffix}`: ''}-${obj.span}`);
+        }
+
+        if (obj.offset) {
+          classArr.push(`wd-col${suffix ? `-${suffix}`: ''}-offset-${obj.offset}`);
+        }
+        return classArr;
+      }
+
   },
 }
 
@@ -93,22 +104,22 @@ export default {
     }
   }
 
-  @media (max-width: 576px) {
-    $class: 'wd-col-phone-';
-    @for $n from 1 through 24 {
-      &.#{$class}#{$n} {
-        width: calc($n / 24) * 100%; 
-      }
-    }
+  // @media (max-width: 576px) {
+  //   $class: 'wd-col-phone-';
+  //   @for $n from 1 through 24 {
+  //     &.#{$class}#{$n} {
+  //       width: calc($n / 24) * 100%; 
+  //     }
+  //   }
 
-    $class: 'wd-col-phone-offset-';
-    @for $n from 1 through 24 {
-      &.#{$class}#{$n} {
-        margin-left: calc($n / 24) * 100%; 
-      }
-    }
-  }
-  @media (min-width: 577px) and (max-width: 768px) {
+  //   $class: 'wd-col-phone-offset-';
+  //   @for $n from 1 through 24 {
+  //     &.#{$class}#{$n} {
+  //       margin-left: calc($n / 24) * 100%; 
+  //     }
+  //   }
+  // }
+  @media (min-width: 577px) {
     $class: 'wd-col-ipad-';
     @for $n from 1 through 24 {
       &.#{$class}#{$n} {
@@ -123,7 +134,7 @@ export default {
       }
     }
   }
-  @media (min-width: 769px) and (max-width: 992px) {
+  @media (min-width: 769px) {
     $class: 'wd-col-arrow-pc-';
     @for $n from 1 through 24 {
       &.#{$class}#{$n} {
@@ -138,7 +149,7 @@ export default {
       }
     }
   }
-  @media (min-width: 993px) and (max-width: 1200px) {
+  @media (min-width: 993px){
     $class: 'wd-col-pc-';
     @for $n from 1 through 24 {
       &.#{$class}#{$n} {

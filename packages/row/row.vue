@@ -1,3 +1,9 @@
+<!--
+ * @Author: zhangchunjie8 zhangchunjie8@jd.com
+ * @Date: 2023-02-09 18:25:48
+ * @LastEditors: zhangchunjie8 zhangchunjie8@jd.com
+ * @LastEditTime: 2023-02-10 15:50:18
+-->
 <template>
   <div class="wd-row" :class="rowAlign" :style="rowStyle">
     <slot></slot>
@@ -33,7 +39,6 @@ export default {
   mounted() {
     this?.$children?.forEach((item, index) => {
       item.gutter = this.gutter;
-      console.log(item);
     })
   },
 }
