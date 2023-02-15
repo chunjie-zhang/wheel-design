@@ -2,7 +2,7 @@
  * @Author: zhangchunjie8 zhangchunjie8@jd.com
  * @Date: 2023-02-09 18:25:48
  * @LastEditors: zhangchunjie8 zhangchunjie8@jd.com
- * @LastEditTime: 2023-02-10 16:16:57
+ * @LastEditTime: 2023-02-10 18:22:21
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -76,7 +76,16 @@
           <wd-col>3333</wd-col>
         </wd-row>
       </div>
-      <div id="test2"></div>
+      <div id="test2">
+        <wd-layout style="height: 100vh">
+          <wd-header>header</wd-header>
+          <wd-layout>
+            <wd-sider style="width: 200px">sider</wd-sider>
+            <wd-content>content</wd-content>
+          </wd-layout>
+          <wd-footer>footer</wd-footer>
+        </wd-layout>
+      </div>
       <div id="test3"></div>
   </div>
   <script src="./src/app.js"></script>

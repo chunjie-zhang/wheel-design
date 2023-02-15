@@ -1,3 +1,9 @@
+<!--
+ * @Author: zhangchunjie8 zhangchunjie8@jd.com
+ * @Date: 2023-02-09 18:25:48
+ * @LastEditors: zhangchunjie8 zhangchunjie8@jd.com
+ * @LastEditTime: 2023-02-10 17:15:25
+-->
 <template>
    <button class="wd-button" :class="{[`wd-button__icon-${iconPosition}`]: iconPosition}" @click="$emit('click')">
      <wd-icon v-if="icon || loading" class="wd-button__icon" :class="{'wd-button__loading': loading}" :name="!loading ? icon : 'loading'"></wd-icon>
@@ -8,7 +14,7 @@
 </template>
 
 <script>
-import wdIcon from '../icon/icon.vue';
+import wdIcon from '../Icon/Icon.vue';
 
 export default {
   name: 'wd-button',
