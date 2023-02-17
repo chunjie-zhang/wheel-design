@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/chunjie-zhang/wheel-design#readme",
   "dependencies": {
+    "packages": "^0.0.8",
     "vue": "^2.6.14",
     "vue-hot-reload-api": "^2.3.4"
   },

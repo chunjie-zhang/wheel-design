@@ -1406,6 +1406,11 @@ base@^0.11.1:
     mixin-deep "^1.2.0"
     pascalcase "^0.1.1"
 
+batch@0.5.0:
+  version "0.5.0"
+  resolved "http://registry.m.jd.com/batch/download/batch-0.5.0.tgz#fd2e05a7a5d696b4db9314013e285d8ff3557ec3"
+  integrity sha1-/S4Fp6XWlrTbkxQBPihdj/NVfsM=
+
 bcrypt-pbkdf@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/bcrypt-pbkdf/-/bcrypt-pbkdf-1.0.2.tgz#a4301d389b6a43f9b67ff3ca11a3f6637e360e9e"
@@ -1596,6 +1601,11 @@ browserslist@^4.0.0, browserslist@^4.1.0, browserslist@^4.17.5, browserslist@^4.
     node-releases "^2.0.2"
     picocolors "^1.0.0"
 
+buffer-crc32@0.2.1:
+  version "0.2.1"
+  resolved "http://registry.m.jd.com/buffer-crc32/download/buffer-crc32-0.2.1.tgz#be3e5382fc02b6d6324956ac1af98aa98b08534c"
+  integrity sha1-vj5TgvwCttYySVasGvmKqYsIU0w=
+
 buffer-equal@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/buffer-equal/-/buffer-equal-0.0.1.tgz#91bc74b11ea405bc916bc6aa908faafa5b4aac4b"
@@ -1624,6 +1634,11 @@ builtin-status-codes@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
   integrity sha1-hZgoeOIbmOHGZCXgPQF0eI9Wnug=
+
+bytes@0.2.1, bytes@~0.2.1:
+  version "0.2.1"
+  resolved "http://registry.m.jd.com/bytes/download/bytes-0.2.1.tgz#555b08abcb063f8975905302523e4cd4ffdfdf31"
+  integrity sha1-VVsIq8sGP4l1kFMCUj5M1P/f3zE=
 
 bytes@3.1.2:
   version "3.1.2"
@@ -1905,6 +1920,13 @@ command-exists@^1.2.6:
   resolved "https://registry.yarnpkg.com/command-exists/-/command-exists-1.2.9.tgz#c50725af3808c8ab0260fd60b01fbfa25b954f69"
   integrity sha512-LTQ/SGc+s0Xc0Fu5WaKnR0YiygZkm9eKFvyS+fRsU7/ZWFF8ykFM6Pc9aCVf1+xasOOZpO3BAVgVrKvsqKHV7w==
 
+commander@1.3.2:
+  version "1.3.2"
+  resolved "http://registry.m.jd.com/commander/download/commander-1.3.2.tgz#8a8f30ec670a6fdd64af52f1914b907d79ead5b5"
+  integrity sha1-io8w7GcKb91kr1LxkUuQfXnq1bU=
+  dependencies:
+    keypress "0.1.x"
+
 commander@^2.11.0, commander@^2.19.0, commander@^2.20.0:
   version "2.20.3"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
@@ -1934,6 +1956,27 @@ concat-stream@~1.6.0:
     inherits "^2.0.3"
     readable-stream "^2.2.2"
     typedarray "^0.0.6"
+
+connect@2.12.0:
+  version "2.12.0"
+  resolved "http://registry.m.jd.com/connect/download/connect-2.12.0.tgz#31d8fa0dcacdf1908d822bd2923be8a2d2a7ed9a"
+  integrity sha1-Mdj6DcrN8ZCNgivSkjvootKn7Zo=
+  dependencies:
+    batch "0.5.0"
+    buffer-crc32 "0.2.1"
+    bytes "0.2.1"
+    cookie "0.1.0"
+    cookie-signature "1.0.1"
+    debug ">= 0.7.3 < 1"
+    fresh "0.2.0"
+    methods "0.1.0"
+    multiparty "2.2.0"
+    negotiator "0.3.0"
+    pause "0.0.1"
+    qs "0.6.6"
+    raw-body "1.1.2"
+    send "0.1.4"
+    uid2 "0.0.3"
 
 connect@^3.7.0:
   version "3.7.0"
@@ -1973,6 +2016,16 @@ convert-source-map@^1.5.1, convert-source-map@^1.7.0:
   integrity sha512-+OQdjP49zViI/6i7nIJpA8rAl4sV/JdPfU9nZs3VqOwGIgizICvuN2ru6fMd+4llL0tar18UYJXfZ/TWtmhUjA==
   dependencies:
     safe-buffer "~5.1.1"
+
+cookie-signature@1.0.1:
+  version "1.0.1"
+  resolved "http://registry.m.jd.com/cookie-signature/download/cookie-signature-1.0.1.tgz#44e072148af01e6e8e24afbf12690d68ae698ecb"
+  integrity sha1-ROByFIrwHm6OJK+/EmkNaK5pjss=
+
+cookie@0.1.0:
+  version "0.1.0"
+  resolved "http://registry.m.jd.com/cookie/download/cookie-0.1.0.tgz#90eb469ddce905c866de687efc43131d8801f9d0"
+  integrity sha1-kOtGndzpBchm3mh+/EMTHYgB+dA=
 
 cookie@~0.4.1:
   version "0.4.2"
@@ -2284,6 +2337,13 @@ deasync@^0.1.14:
     bindings "^1.5.0"
     node-addon-api "^1.7.1"
 
+debug@*, debug@^4.3.4, debug@~4.3.1, debug@~4.3.2:
+  version "4.3.4"
+  resolved "http://registry.m.jd.com/debug/download/debug-4.3.4.tgz#1319f6579357f2338d3337d2cdd4914bb5dcc865"
+  integrity sha1-Exn2V5NX8jONMzfSzdSRS7XcyGU=
+  dependencies:
+    ms "2.1.2"
+
 debug@2.6.9, debug@^2.2.0, debug@^2.3.3:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
@@ -2298,12 +2358,10 @@ debug@4.3.3, debug@^4.1.0, debug@^4.1.1:
   dependencies:
     ms "2.1.2"
 
-debug@^4.3.4, debug@~4.3.1, debug@~4.3.2:
-  version "4.3.4"
-  resolved "http://registry.m.jd.com/debug/download/debug-4.3.4.tgz#1319f6579357f2338d3337d2cdd4914bb5dcc865"
-  integrity sha1-Exn2V5NX8jONMzfSzdSRS7XcyGU=
-  dependencies:
-    ms "2.1.2"
+"debug@>= 0.7.3 < 1":
+  version "0.8.1"
+  resolved "http://registry.m.jd.com/debug/download/debug-0.8.1.tgz#20ff4d26f5e422cb68a1bacbbb61039ad8c1c130"
+  integrity sha1-IP9NJvXkIstoobrLu2EDmtjBwTA=
 
 decamelize@^4.0.0:
   version "4.0.0"
@@ -2565,6 +2623,13 @@ encodeurl@~1.0.2:
   resolved "https://registry.yarnpkg.com/encodeurl/-/encodeurl-1.0.2.tgz#ad3ff4c86ec2d029322f5a02c3a9a606c95b3f59"
   integrity sha1-rT/0yG7C0CkyL1oCw6mmBslbP1k=
 
+encoding@*:
+  version "0.1.13"
+  resolved "http://registry.m.jd.com/encoding/download/encoding-0.1.13.tgz#56574afdd791f54a8e9b2785c0582a2d26210fa9"
+  integrity sha1-VldK/deR9UqOmyeFwFgqLSYhD6k=
+  dependencies:
+    iconv-lite "^0.6.2"
+
 engine.io-parser@~5.0.3:
   version "5.0.6"
   resolved "http://registry.m.jd.com/engine.io-parser/download/engine.io-parser-5.0.6.tgz#7811244af173e157295dec9b2718dfe42a64ef45"
@@ -2748,6 +2813,24 @@ expand-brackets@^2.1.4:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
+express@~3.4.0:
+  version "3.4.8"
+  resolved "http://registry.m.jd.com/express/download/express-3.4.8.tgz#aa7a8986de07053337f4bc5ed9a6453d9cc8e2e1"
+  integrity sha1-qnqJht4HBTM39Lxe2aZFPZzI4uE=
+  dependencies:
+    buffer-crc32 "0.2.1"
+    commander "1.3.2"
+    connect "2.12.0"
+    cookie "0.1.0"
+    cookie-signature "1.0.1"
+    debug ">= 0.7.3 < 1"
+    fresh "0.2.0"
+    merge-descriptors "0.0.1"
+    methods "0.1.0"
+    mkdirp "0.3.5"
+    range-parser "0.0.4"
+    send "0.1.4"
+
 extend-shallow@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/extend-shallow/-/extend-shallow-2.0.1.tgz#51af7d614ad9a9f610ea1bafbb989d6b1c56890f"
@@ -2792,6 +2875,14 @@ extsprintf@^1.2.0:
   resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.4.1.tgz#8d172c064867f235c0c84a596806d279bf4bcc07"
   integrity sha512-Wrk35e8ydCKDj/ArClo1VrPVmN8zph5V4AtHwIuHhvMXsKf73UT3BOD+azBIW+3wOJ4FhEH7zyaJCFvChjYvMA==
 
+factories@0.0.x:
+  version "0.0.8"
+  resolved "http://registry.m.jd.com/factories/download/factories-0.0.8.tgz#6eb17d34910b870429ed3e07504891d238f5832c"
+  integrity sha1-brF9NJELhwQp7T4HUEiR0jj1gyw=
+  dependencies:
+    protoclass "0.0.x"
+    type-component "0.0.x"
+
 falafel@^2.1.0:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/falafel/-/falafel-2.2.4.tgz#b5d86c060c2412a43166243cb1bce44d1abd2819"
@@ -2833,6 +2924,13 @@ fastparse@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/fastparse/-/fastparse-1.1.2.tgz#91728c5a5942eced8531283c79441ee4122c35a9"
   integrity sha512-483XLLxTVIwWK3QTrMGRqUfUpoOs/0hbQrl2oz4J0pAcm3A3bu84wxTFqGqkJzewCLdME38xJLJAxBABfQT8sQ==
+
+fetch@~0.3.6:
+  version "0.3.6"
+  resolved "http://registry.m.jd.com/fetch/download/fetch-0.3.6.tgz#37543718c22a8ac03c7c7b1c5137bb37f63d83d8"
+  integrity sha1-N1Q3GMIqisA8fHscUTe7N/Y9g9g=
+  dependencies:
+    encoding "*"
 
 file-uri-to-path@1.0.0:
   version "1.0.0"
@@ -2927,6 +3025,11 @@ fragment-cache@^0.2.1:
   integrity sha1-QpD60n8T6Jvn8zeZxrxaCr//DRk=
   dependencies:
     map-cache "^0.2.2"
+
+fresh@0.2.0:
+  version "0.2.0"
+  resolved "http://registry.m.jd.com/fresh/download/fresh-0.2.0.tgz#bfd9402cf3df12c4a4c310c79f99a3dde13d34a7"
+  integrity sha1-v9lALPPfEsSkwxDHn5mj3eE9NKc=
 
 fresh@0.5.2:
   version "0.5.2"
@@ -3327,6 +3430,13 @@ iconv-lite@0.4.24:
   integrity sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==
   dependencies:
     safer-buffer ">= 2.1.2 < 3"
+
+iconv-lite@^0.6.2:
+  version "0.6.3"
+  resolved "http://registry.m.jd.com/iconv-lite/download/iconv-lite-0.6.3.tgz#a52f80bf38da1952eb5c681790719871a1a72501"
+  integrity sha1-pS+AvzjaGVLrXGgXkHGYcaGnJQE=
+  dependencies:
+    safer-buffer ">= 2.1.2 < 3.0.0"
 
 icss-replace-symbols@1.1.0, icss-replace-symbols@^1.1.0:
   version "1.1.0"
@@ -3896,6 +4006,11 @@ karma@^6.3.16:
     ua-parser-js "^0.7.30"
     yargs "^16.1.1"
 
+keypress@0.1.x:
+  version "0.1.0"
+  resolved "http://registry.m.jd.com/keypress/download/keypress-0.1.0.tgz#4a3188d4291b66b4f65edb99f806aa9ae293592a"
+  integrity sha1-SjGI1CkbZrT2XtuZ+AaqmuKTWSo=
+
 kind-of@^3.0.2, kind-of@^3.0.3, kind-of@^3.2.0:
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-3.2.2.tgz#31ea21a734bab9bbb0f32466d893aea51e4a3c64"
@@ -4054,6 +4169,11 @@ media-typer@0.3.0:
   resolved "http://registry.m.jd.com/media-typer/download/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
   integrity sha1-hxDXrwqmJvj/+hzgAWhUUmMlV0g=
 
+merge-descriptors@0.0.1:
+  version "0.0.1"
+  resolved "http://registry.m.jd.com/merge-descriptors/download/merge-descriptors-0.0.1.tgz#2ff0980c924cf81d0b5d1fb601177cb8bb56c0d0"
+  integrity sha1-L/CYDJJM+B0LXR+2ARd8uLtWwNA=
+
 merge-source-map@1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/merge-source-map/-/merge-source-map-1.0.4.tgz#a5de46538dae84d4114cc5ea02b4772a6346701f"
@@ -4072,6 +4192,11 @@ merge2@^1.2.3:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/merge2/-/merge2-1.4.1.tgz#4368892f885e907455a6fd7dc55c0c9d404990ae"
   integrity sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==
+
+methods@0.1.0:
+  version "0.1.0"
+  resolved "http://registry.m.jd.com/methods/download/methods-0.1.0.tgz#335d429eefd21b7bacf2e9c922a8d2bd14a30e4f"
+  integrity sha1-M11Cnu/SG3us8unJIqjSvRSjDk8=
 
 micromatch@^3.0.4, micromatch@^3.1.10, micromatch@^3.1.4:
   version "3.1.10"
@@ -4123,6 +4248,11 @@ mime-types@~2.1.24, mime-types@~2.1.34:
   integrity sha1-OBqHG2KnNEUGYK497uRIE/cNlZo=
   dependencies:
     mime-db "1.52.0"
+
+mime@1.2.11, mime@~1.2.9:
+  version "1.2.11"
+  resolved "http://registry.m.jd.com/mime/download/mime-1.2.11.tgz#58203eed86e3a5ef17aed2b7d9ebd47f0a60dd10"
+  integrity sha1-WCA+7Ybjpe8XrtK32evUfwpg3RA=
 
 mime@1.6.0:
   version "1.6.0"
@@ -4180,6 +4310,11 @@ mixin-deep@^1.2.0:
   dependencies:
     for-in "^1.0.2"
     is-extendable "^1.0.1"
+
+mkdirp@0.3.5:
+  version "0.3.5"
+  resolved "http://registry.m.jd.com/mkdirp/download/mkdirp-0.3.5.tgz#de3e5f8961c88c787ee1368df849ac4413eca8d7"
+  integrity sha1-3j5fiWHIjHh+4TaN+EmsRBPsqNc=
 
 mkdirp@^0.5.1, mkdirp@~0.5.1:
   version "0.5.5"
@@ -4240,6 +4375,14 @@ ms@2.1.3:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.3.tgz#574c8138ce1d2b5861f0b44579dbadd60c6615b2"
   integrity sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==
 
+multiparty@2.2.0:
+  version "2.2.0"
+  resolved "http://registry.m.jd.com/multiparty/download/multiparty-2.2.0.tgz#a567c2af000ad22dc8f2a653d91978ae1f5316f4"
+  integrity sha1-pWfCrwAK0i3I8qZT2Rl4rh9TFvQ=
+  dependencies:
+    readable-stream "~1.1.9"
+    stream-counter "~0.2.0"
+
 nan@^2.12.1:
   version "2.15.0"
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.15.0.tgz#3f34a473ff18e15c1b5626b62903b5ad6e665fee"
@@ -4266,6 +4409,11 @@ nanomatch@^1.2.9:
     regex-not "^1.0.0"
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
+
+negotiator@0.3.0:
+  version "0.3.0"
+  resolved "http://registry.m.jd.com/negotiator/download/negotiator-0.3.0.tgz#706d692efeddf574d57ea9fb1ab89a4fa7ee8f60"
+  integrity sha1-cG1pLv7d9XTVfqn7GriaT6fuj2A=
 
 negotiator@0.6.3:
   version "0.6.3"
@@ -4515,6 +4663,17 @@ p-locate@^5.0.0:
   dependencies:
     p-limit "^3.0.2"
 
+packages@^0.0.8:
+  version "0.0.8"
+  resolved "http://registry.m.jd.com/packages/download/packages-0.0.8.tgz#f32d0cd71d49e47bed486614cd1969e2745732c8"
+  integrity sha1-8y0M1x1J5HvtSGYUzRlp4nRXMsg=
+  dependencies:
+    express "~3.4.0"
+    factories "0.0.x"
+    resolver "~0.1.11"
+    toarray "0.0.1"
+    type-component "0.0.1"
+
 pako@^0.2.5:
   version "0.2.9"
   resolved "https://registry.yarnpkg.com/pako/-/pako-0.2.9.tgz#f3f7522f4ef782348da8161bad9ecfd51bf83a75"
@@ -4665,6 +4824,11 @@ pathval@^1.1.1:
   version "1.1.1"
   resolved "http://registry.m.jd.com/pathval/download/pathval-1.1.1.tgz#8534e77a77ce7ac5a2512ea21e0fdb8fcf6c3d8d"
   integrity sha1-hTTnenfOesWiUS6iHg/bj89sPY0=
+
+pause@0.0.1:
+  version "0.0.1"
+  resolved "http://registry.m.jd.com/pause/download/pause-0.0.1.tgz#1d408b3fdb76923b9543d96fb4c9dfd535d9cb5d"
+  integrity sha1-HUCLP9t2kjuVQ9lvtMnf1TXZy10=
 
 pbkdf2@^3.0.3:
   version "3.1.2"
@@ -5115,6 +5279,11 @@ process@^0.11.10:
   resolved "https://registry.yarnpkg.com/process/-/process-0.11.10.tgz#7332300e840161bda3e69a1d1d91a7d4bc16f182"
   integrity sha1-czIwDoQBYb2j5podHZGn1LwW8YI=
 
+protoclass@0.0.x:
+  version "0.0.6"
+  resolved "http://registry.m.jd.com/protoclass/download/protoclass-0.0.6.tgz#d740bbe6844d101a4b65c5c5c43d93e74378391f"
+  integrity sha1-10C75oRNEBpLZcXFxD2T50N4OR8=
+
 pseudomap@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/pseudomap/-/pseudomap-1.0.2.tgz#f052a28da70e618917ef0a8ac34c1ae5a68286b3"
@@ -5172,6 +5341,11 @@ qjobs@^1.2.0:
   resolved "http://registry.m.jd.com/qjobs/download/qjobs-1.2.0.tgz#c45e9c61800bd087ef88d7e256423bdd49e5d071"
   integrity sha1-xF6cYYAL0IfviNfiVkI73Unl0HE=
 
+qs@0.6.6:
+  version "0.6.6"
+  resolved "http://registry.m.jd.com/qs/download/qs-0.6.6.tgz#6e015098ff51968b8a3c819001d5f2c89bc4b107"
+  integrity sha1-bgFQmP9RlouKPIGQAdXyyJvEsQc=
+
 qs@6.11.0:
   version "6.11.0"
   resolved "http://registry.m.jd.com/qs/download/qs-6.11.0.tgz#fd0d963446f7a65e1367e01abd85429453f0c37a"
@@ -5218,10 +5392,22 @@ randomfill@^1.0.3:
     randombytes "^2.0.5"
     safe-buffer "^5.1.0"
 
+range-parser@0.0.4:
+  version "0.0.4"
+  resolved "http://registry.m.jd.com/range-parser/download/range-parser-0.0.4.tgz#c0427ffef51c10acba0782a46c9602e744ff620b"
+  integrity sha1-wEJ//vUcEKy6B4KkbJYC50T/Ygs=
+
 range-parser@^1.2.1, range-parser@~1.2.1:
   version "1.2.1"
   resolved "http://registry.m.jd.com/range-parser/download/range-parser-1.2.1.tgz#3cf37023d199e1c24d1a55b84800c2f3e6468031"
   integrity sha1-PPNwI9GZ4cJNGlW4SADC8+ZGgDE=
+
+raw-body@1.1.2:
+  version "1.1.2"
+  resolved "http://registry.m.jd.com/raw-body/download/raw-body-1.1.2.tgz#c74b3004dea5defd1696171106ac740ec31d62be"
+  integrity sha1-x0swBN6l3v0WlhcRBqx0DsMdYr4=
+  dependencies:
+    bytes "~0.2.1"
 
 raw-body@2.5.1:
   version "2.5.1"
@@ -5254,6 +5440,16 @@ readable-stream@^3.1.1, readable-stream@^3.6.0:
     inherits "^2.0.3"
     string_decoder "^1.1.1"
     util-deprecate "^1.0.1"
+
+readable-stream@~1.1.8, readable-stream@~1.1.9:
+  version "1.1.14"
+  resolved "http://registry.m.jd.com/readable-stream/download/readable-stream-1.1.14.tgz#7cf4c54ef648e3813084c636dd2079e166c081d9"
+  integrity sha1-fPTFTvZI44EwhMY23SB54WbAgdk=
+  dependencies:
+    core-util-is "~1.0.0"
+    inherits "~2.0.1"
+    isarray "0.0.1"
+    string_decoder "~0.10.x"
 
 readdirp@^2.2.1:
   version "2.2.1"
@@ -5423,6 +5619,14 @@ resolve@^1.1.5, resolve@^1.14.2, resolve@^1.4.0:
     path-parse "^1.0.7"
     supports-preserve-symlinks-flag "^1.0.0"
 
+resolver@~0.1.11:
+  version "0.1.12"
+  resolved "http://registry.m.jd.com/resolver/download/resolver-0.1.12.tgz#d0d24d698f211f0d5fe24393a55fc3e0b5c93090"
+  integrity sha1-0NJNaY8hHw1f4kOTpV/D4LXJMJA=
+  dependencies:
+    fetch "~0.3.6"
+    mime "1.2.11"
+
 restore-cursor@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/restore-cursor/-/restore-cursor-2.0.0.tgz#9f7ee287f82fd326d4fd162923d62129eee0dfaf"
@@ -5490,7 +5694,7 @@ safe-regex@^1.1.0:
   dependencies:
     ret "~0.1.10"
 
-"safer-buffer@>= 2.1.2 < 3", safer-buffer@^2.0.2, safer-buffer@^2.1.0, safer-buffer@~2.1.0:
+"safer-buffer@>= 2.1.2 < 3", "safer-buffer@>= 2.1.2 < 3.0.0", safer-buffer@^2.0.2, safer-buffer@^2.1.0, safer-buffer@~2.1.0:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
@@ -5530,6 +5734,16 @@ semver@^6.1.1, semver@^6.1.2, semver@^6.3.0:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.0.tgz#ee0a64c8af5e8ceea67687b133761e1becbd1d3d"
   integrity sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
+
+send@0.1.4:
+  version "0.1.4"
+  resolved "http://registry.m.jd.com/send/download/send-0.1.4.tgz#be70d8d1be01de61821af13780b50345a4f71abd"
+  integrity sha1-vnDY0b4B3mGCGvE3gLUDRaT3Gr0=
+  dependencies:
+    debug "*"
+    fresh "0.2.0"
+    mime "~1.2.9"
+    range-parser "0.0.4"
 
 send@0.17.2:
   version "0.17.2"
@@ -5851,6 +6065,13 @@ stream-browserify@^2.0.1:
     inherits "~2.0.1"
     readable-stream "^2.0.2"
 
+stream-counter@~0.2.0:
+  version "0.2.0"
+  resolved "http://registry.m.jd.com/stream-counter/download/stream-counter-0.2.0.tgz#ded266556319c8b0e222812b9cf3b26fa7d947de"
+  integrity sha1-3tJmVWMZyLDiIoErnPOyb6fZR94=
+  dependencies:
+    readable-stream "~1.1.8"
+
 stream-http@^2.7.2:
   version "2.8.3"
   resolved "https://registry.yarnpkg.com/stream-http/-/stream-http-2.8.3.tgz#b2d242469288a5a27ec4fe8933acf623de6514fc"
@@ -5902,6 +6123,11 @@ string_decoder@^1.0.0, string_decoder@^1.1.1:
   integrity sha512-hkRX8U1WjJFd8LsDJ2yQ/wWWxaopEsABU1XfkM8A+j0+85JAGppt16cr1Whg6KIbb4okU6Mql6BOj+uup/wKeA==
   dependencies:
     safe-buffer "~5.2.0"
+
+string_decoder@~0.10.x:
+  version "0.10.31"
+  resolved "http://registry.m.jd.com/string_decoder/download/string_decoder-0.10.31.tgz#62e203bc41766c6c28c9fc84301dab1c5310fa94"
+  integrity sha1-YuIDvEF2bGwoyfyEMB2rHFMQ+pQ=
 
 string_decoder@~1.1.1:
   version "1.1.1"
@@ -6111,6 +6337,11 @@ to-regex@^3.0.1, to-regex@^3.0.2:
     regex-not "^1.0.2"
     safe-regex "^1.1.0"
 
+toarray@0.0.1:
+  version "0.0.1"
+  resolved "http://registry.m.jd.com/toarray/download/toarray-0.0.1.tgz#a115430a84a4be91b2746f62b9e07c83a3fb8c45"
+  integrity sha1-oRVDCoSkvpGydG9iueB8g6P7jEU=
+
 toidentifier@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/toidentifier/-/toidentifier-1.0.1.tgz#3be34321a88a820ed1bd80dfaa33e479fbb8dd35"
@@ -6155,6 +6386,11 @@ type-check@~0.3.2:
   dependencies:
     prelude-ls "~1.1.2"
 
+type-component@0.0.1, type-component@0.0.x:
+  version "0.0.1"
+  resolved "http://registry.m.jd.com/type-component/download/type-component-0.0.1.tgz#952a6c81c21efd24d13d811d0c8498cb860e1956"
+  integrity sha1-lSpsgcIe/STRPYEdDISYy4YOGVY=
+
 type-detect@4.0.8, type-detect@^4.0.0, type-detect@^4.0.5, type-detect@^4.0.8:
   version "4.0.8"
   resolved "http://registry.m.jd.com/type-detect/download/type-detect-4.0.8.tgz#7646fb5f18871cfbb7749e69bd39a6388eb7450c"
@@ -6182,6 +6418,11 @@ ua-parser-js@^0.7.30:
   version "0.7.33"
   resolved "http://registry.m.jd.com/ua-parser-js/download/ua-parser-js-0.7.33.tgz#1d04acb4ccef9293df6f70f2c3d22f3030d8b532"
   integrity sha1-HQSstMzvkpPfb3Dyw9IvMDDYtTI=
+
+uid2@0.0.3:
+  version "0.0.3"
+  resolved "http://registry.m.jd.com/uid2/download/uid2-0.0.3.tgz#483126e11774df2f71b8b639dcd799c376162b82"
+  integrity sha1-SDEm4Rd03y9xuLY53NeZw3YWK4I=
 
 unbox-primitive@^1.0.1:
   version "1.0.1"

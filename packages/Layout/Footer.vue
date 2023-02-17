@@ -2,7 +2,7 @@
  * @Author: zhangchunjie8 zhangchunjie8@jd.com
  * @Date: 2023-02-10 17:12:26
  * @LastEditors: zhangchunjie8 zhangchunjie8@jd.com
- * @LastEditTime: 2023-02-10 17:28:51
+ * @LastEditTime: 2023-02-17 16:15:49
 -->
 <template>
   <div class="wd-footer">
@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  name: 'wd-footer'
+  name: 'WdFooter'
 }
 </script>
 

@@ -1,3 +1,9 @@
+<!--
+ * @Author: zhangchunjie8 zhangchunjie8@jd.com
+ * @Date: 2023-02-09 18:25:48
+ * @LastEditors: zhangchunjie8 zhangchunjie8@jd.com
+ * @LastEditTime: 2023-02-17 15:27:45
+-->
 <template>
   <div class="wd-input" :class="{error}">
     <input
@@ -21,7 +27,7 @@
 import wdIcon from '../icon/icon.vue';
 
 export default {
-  name: 'wd-input',
+  name: 'WdInput',
   components: {wdIcon},
     props: {
       value: {

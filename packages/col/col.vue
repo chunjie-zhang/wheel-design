@@ -17,7 +17,7 @@ let validator = (val) => {
   }
 };
 export default {
-  name: 'wd-col',
+  name: 'WdCol',
    props: {
     span: { // 一列占整体的多少份，整体是24份
       type: [Number, String],

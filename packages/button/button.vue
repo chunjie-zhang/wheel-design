@@ -2,7 +2,7 @@
  * @Author: zhangchunjie8 zhangchunjie8@jd.com
  * @Date: 2023-02-09 18:25:48
  * @LastEditors: zhangchunjie8 zhangchunjie8@jd.com
- * @LastEditTime: 2023-02-10 17:15:25
+ * @LastEditTime: 2023-02-17 15:26:44
 -->
 <template>
    <button class="wd-button" :class="{[`wd-button__icon-${iconPosition}`]: iconPosition}" @click="$emit('click')">
@@ -17,7 +17,7 @@
 import wdIcon from '../Icon/Icon.vue';
 
 export default {
-  name: 'wd-button',
+  name: 'WdButton',
   props:{
     loading: {
       type: Boolean,

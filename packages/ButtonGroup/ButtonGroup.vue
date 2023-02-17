@@ -1,3 +1,9 @@
+<!--
+ * @Author: zhangchunjie8 zhangchunjie8@jd.com
+ * @Date: 2023-02-09 18:25:48
+ * @LastEditors: zhangchunjie8 zhangchunjie8@jd.com
+ * @LastEditTime: 2023-02-17 15:26:57
+-->
 <template>
   <div class="wd-button-group">
     <slot></slot>
@@ -6,7 +12,7 @@
 
 <script>
 export default {
-  name: 'wd-button-group',
+  name: 'WdButtonGroup',
   mounted() {
     for(let node of this.$el.children) {
       let name = node.nodeName.toLowerCase();

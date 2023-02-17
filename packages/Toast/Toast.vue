@@ -2,7 +2,7 @@
  * @Author: zhangchunjie8 zhangchunjie8@jd.com
  * @Date: 2023-02-15 16:59:07
  * @LastEditors: zhangchunjie8 zhangchunjie8@jd.com
- * @LastEditTime: 2023-02-16 18:39:19
+ * @LastEditTime: 2023-02-17 15:29:40
 -->
 <template>
   <div class="wd-toast-wrapper" :class="positionClass">
@@ -19,7 +19,7 @@
 
 <script>
 export default {
-  name: 'wd-toast',
+  name: 'WdToast',
   props: {
     autoClose: {
       type: Boolean,

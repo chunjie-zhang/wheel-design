@@ -1,18 +1,18 @@
 <!--
  * @Author: zhangchunjie8 zhangchunjie8@jd.com
- * @Date: 2023-02-10 16:34:17
+ * @Date: 2023-02-17 15:04:47
  * @LastEditors: zhangchunjie8 zhangchunjie8@jd.com
- * @LastEditTime: 2023-02-17 15:27:59
+ * @LastEditTime: 2023-02-17 15:29:53
 -->
 <template>
-  <div class="wd-content">
+  <div class="wd-tabs">
     <slot></slot>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'WdContent'
+  name: 'WdTabs',
 }
 </script>
 

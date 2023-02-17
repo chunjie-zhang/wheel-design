@@ -2,7 +2,7 @@
  * @Author: zhangchunjie8 zhangchunjie8@jd.com
  * @Date: 2023-02-09 18:25:48
  * @LastEditors: zhangchunjie8 zhangchunjie8@jd.com
- * @LastEditTime: 2023-02-16 16:28:57
+ * @LastEditTime: 2023-02-17 15:29:28
 -->
 <template>
   <div class="wd-row" :class="rowAlign" :style="rowStyle">
@@ -11,7 +11,7 @@
 </template>
 <script>
 export default {
-  name: 'wd-row',
+  name: 'WdRow',
   props: {
     gutter: {
       type: [Number, String]

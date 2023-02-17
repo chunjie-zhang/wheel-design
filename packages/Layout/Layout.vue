@@ -2,7 +2,7 @@
  * @Author: zhangchunjie8 zhangchunjie8@jd.com
  * @Date: 2023-02-10 17:12:52
  * @LastEditors: zhangchunjie8 zhangchunjie8@jd.com
- * @LastEditTime: 2023-02-10 18:08:52
+ * @LastEditTime: 2023-02-17 15:29:04
 -->
 <template>
   <div class="wd-layout" :class="layoutClass">
@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  name: 'wd-layout',
+  name: 'WdLayout',
   data() {
     return {
       layoutClass: {

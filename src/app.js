@@ -2,38 +2,50 @@
  * @Author: zhangchunjie8 zhangchunjie8@jd.com
  * @Date: 2023-02-09 18:25:48
  * @LastEditors: zhangchunjie8 zhangchunjie8@jd.com
- * @LastEditTime: 2023-02-16 18:40:49
+ * @LastEditTime: 2023-02-17 15:22:33
  */
 import Vue from 'vue';
-import wdIcon from '../packages/Icon/Icon.vue';
-import wdButton from '../packages/Button/Button.vue';
-import wdButtonGroup from '../packages/ButtonGroup/ButtonGroup.vue';
-import wdInput from '../packages/Input/Input.vue';
-import wdCol from '../packages/Col/Col.vue';
-import wdRow from '../packages/Row/Row.vue';
-import wdLayout from '../packages/Layout/Layout.vue';
-import wdHeader from '../packages/Layout/Header.vue';
-import wdSider from '../packages/Layout/Sider.vue';
-import wdContent from '../packages/Layout/Content.vue';
-import wdFooter from '../packages/Layout/Footer.vue';
+import WdIcon from '../packages/Icon/Icon.vue';
+import WdButton from '../packages/Button/Button.vue';
+import WdButtonGroup from '../packages/ButtonGroup/ButtonGroup.vue';
+import WdInput from '../packages/Input/Input.vue';
+import WdCol from '../packages/Col/Col.vue';
+import WdRow from '../packages/Row/Row.vue';
+import WdLayout from '../packages/Layout/Layout.vue';
+import WdHeader from '../packages/Layout/Header.vue';
+import WdSider from '../packages/Layout/Sider.vue';
+import WdContent from '../packages/Layout/Content.vue';
+import WdFooter from '../packages/Layout/Footer.vue';
 import WdToast from '../packages/Toast/Toast.vue';
+import WdTabs from '../packages/Tabs/Tabs';
+import WdTabsHead from '../packages/Tabs/TabsHead';
+import WdTabsItem from '../packages/Tabs/TabsItem';
+import WdTabsBody from '../packages/Tabs/TabsBody';
+import WdTabsPane from '../packages/Tabs/TabsPane';
+
+
 import plugin from '../packages/utils/plugin';
 
 Vue.use(plugin);
 
 // 注册组件
-Vue.component(wdIcon.name, wdIcon)
-Vue.component(wdButton.name, wdButton)
-Vue.component(wdButtonGroup.name, wdButtonGroup)
-Vue.component(wdInput.name, wdInput)
-Vue.component(wdCol.name, wdCol)
-Vue.component(wdRow.name, wdRow)
-Vue.component(wdLayout.name, wdLayout)
-Vue.component(wdHeader.name, wdHeader)
-Vue.component(wdSider.name, wdSider)
-Vue.component(wdContent.name, wdContent)
-Vue.component(wdFooter.name, wdFooter)
+Vue.component(WdIcon.name, WdIcon)
+Vue.component(WdButton.name, WdButton)
+Vue.component(WdButtonGroup.name, WdButtonGroup)
+Vue.component(WdInput.name, WdInput)
+Vue.component(WdCol.name, WdCol)
+Vue.component(WdRow.name, WdRow)
+Vue.component(WdLayout.name, WdLayout)
+Vue.component(WdHeader.name, WdHeader)
+Vue.component(WdSider.name, WdSider)
+Vue.component(WdContent.name, WdContent)
+Vue.component(WdFooter.name, WdFooter)
 Vue.component(WdToast.name, WdToast);
+Vue.component(WdTabs.name, WdTabs);
+Vue.component(WdTabsHead.name, WdTabsHead);
+Vue.component(WdTabsItem.name, WdTabsItem);
+Vue.component(WdTabsBody.name, WdTabsBody);
+Vue.component(WdTabsPane.name, WdTabsPane);
 
 new Vue({
     el: '#app',

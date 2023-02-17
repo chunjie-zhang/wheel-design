@@ -2,7 +2,7 @@
  * @Author: zhangchunjie8 zhangchunjie8@jd.com
  * @Date: 2023-02-10 17:12:17
  * @LastEditors: zhangchunjie8 zhangchunjie8@jd.com
- * @LastEditTime: 2023-02-10 18:26:51
+ * @LastEditTime: 2023-02-17 15:29:13
 -->
 <template>
   <transition name="wd-sider">
@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: 'wd-sider',
+  name: 'WdSider',
   data() {
     return {
       show: true,
