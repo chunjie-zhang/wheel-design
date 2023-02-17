@@ -2,7 +2,7 @@
  * @Author: zhangchunjie8 zhangchunjie8@jd.com
  * @Date: 2023-02-09 18:25:48
  * @LastEditors: zhangchunjie8 zhangchunjie8@jd.com
- * @LastEditTime: 2023-02-10 18:22:21
+ * @LastEditTime: 2023-02-16 11:40:44
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -37,6 +37,9 @@
         }
         body {
             font-size: var(--font-size);
+        }
+        .em {
+          color: red;
         }
     </style>
 </head>
@@ -76,7 +79,8 @@
           <wd-col>3333</wd-col>
         </wd-row>
       </div>
-      <div id="test2">
+      <!---布局组件-->
+      <!-- <div id="test2">
         <wd-layout style="height: 100vh">
           <wd-header>header</wd-header>
           <wd-layout>
@@ -85,8 +89,11 @@
           </wd-layout>
           <wd-footer>footer</wd-footer>
         </wd-layout>
+      </div> -->
+      <!--toast组件-->
+      <div id="test3">
+        <button @click="handleToastClick">点击</button>
       </div>
-      <div id="test3"></div>
   </div>
   <script src="./src/app.js"></script>
 </body>

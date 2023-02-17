@@ -2,7 +2,7 @@
  * @Author: zhangchunjie8 zhangchunjie8@jd.com
  * @Date: 2023-02-09 18:25:48
  * @LastEditors: zhangchunjie8 zhangchunjie8@jd.com
- * @LastEditTime: 2023-02-10 15:50:18
+ * @LastEditTime: 2023-02-16 16:28:57
 -->
 <template>
   <div class="wd-row" :class="rowAlign" :style="rowStyle">
@@ -19,7 +19,7 @@ export default {
     align: {
       type: String,
       validator(val) {
-        return ['left', 'right', 'center'].includes(val);
+        return ['left', 'right', 'center'].indexOf(val) >= 0;
       },
     }
   },
