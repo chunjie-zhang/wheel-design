@@ -2,7 +2,7 @@
  * @Author: zhangchunjie8 zhangchunjie8@jd.com
  * @Date: 2023-02-09 18:25:48
  * @LastEditors: zhangchunjie8 zhangchunjie8@jd.com
- * @LastEditTime: 2023-02-17 15:22:33
+ * @LastEditTime: 2023-03-07 21:10:31
  */
 import Vue from 'vue';
 import WdIcon from '../packages/Icon/Icon.vue';
@@ -52,20 +52,24 @@ new Vue({
     data: {
       loading: true,
       message: 'zcj',
+      selected: 'article',
     },
     methods: {
       handleToastClick () {
         this.$toast('<em class="em">我是message消息我是message消息我是message消息我是message消息</em>', {
           enableHtml: true,
-          autoCloseDelay: 200000,
+          autoCloseDelay: 2000,
           closeButton: {
             text: '我知道了',
             callback: () => {
               console.log('回调成功');
             }
           },
-          position: 'middle'
+          position: 'top'
         });
+      },
+      handleTabsChange(val) {
+        console.log('==========', val);
       },
     },
 })

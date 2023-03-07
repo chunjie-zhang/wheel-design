@@ -2,7 +2,7 @@
  * @Author: zhangchunjie8 zhangchunjie8@jd.com
  * @Date: 2023-02-09 18:25:48
  * @LastEditors: zhangchunjie8 zhangchunjie8@jd.com
- * @LastEditTime: 2023-02-17 16:41:36
+ * @LastEditTime: 2023-03-07 21:09:09
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -93,6 +93,21 @@
       <!--toast组件-->
       <div id="test3">
         <button @click="handleToastClick">点击</button>
+      </div>
+      <div id="test4">
+        <div>{{selected}}</div>
+        <wd-tabs v-model="selected" @tab-click="handleTabsChange">
+          <wd-tabs-head>
+            <wd-tabs-item name="code">代码</wd-tabs-item>
+            <wd-tabs-item name="lesson">代码</wd-tabs-item>
+            <wd-tabs-item name="article">博客</wd-tabs-item>
+          </wd-tabs-head>
+          <wd-tabs-body>
+            <wd-tabs-pane label="代码" name="code">console.log(111);</wd-tabs-pane>
+            <wd-tabs-pane label="代码" name="lesson">排球</wd-tabs-pane>
+            <wd-tabs-pane label="博客" name="article">文章</wd-tabs-pane>
+          </wd-tabs-body>
+        </wd-tabs>
       </div>
   </div>
   <script src="./src/app.js"></script>
