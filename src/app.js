@@ -2,7 +2,7 @@
  * @Author: zhangchunjie8 zhangchunjie8@jd.com
  * @Date: 2023-02-09 18:25:48
  * @LastEditors: zhangchunjie8 zhangchunjie8@jd.com
- * @LastEditTime: 2023-03-07 21:10:31
+ * @LastEditTime: 2023-03-08 11:00:32
  */
 import Vue from 'vue';
 import WdIcon from '../packages/Icon/Icon.vue';
@@ -22,7 +22,7 @@ import WdTabsHead from '../packages/Tabs/TabsHead';
 import WdTabsItem from '../packages/Tabs/TabsItem';
 import WdTabsBody from '../packages/Tabs/TabsBody';
 import WdTabsPane from '../packages/Tabs/TabsPane';
-
+import WdPopover from '../packages/Popover/Popover.vue';
 
 import plugin from '../packages/utils/plugin';
 
@@ -46,6 +46,7 @@ Vue.component(WdTabsHead.name, WdTabsHead);
 Vue.component(WdTabsItem.name, WdTabsItem);
 Vue.component(WdTabsBody.name, WdTabsBody);
 Vue.component(WdTabsPane.name, WdTabsPane);
+Vue.component(WdPopover.name, WdPopover);
 
 new Vue({
     el: '#app',
