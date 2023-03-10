@@ -2,7 +2,7 @@
  * @Author: zhangchunjie8 zhangchunjie8@jd.com
  * @Date: 2023-03-08 10:48:48
  * @LastEditors: zhangchunjie8 zhangchunjie8@jd.com
- * @LastEditTime: 2023-03-08 21:31:10
+ * @LastEditTime: 2023-03-09 18:35:51
 -->
 <template>
   <div ref="popover" class="wd-popover">
@@ -107,7 +107,6 @@ export default {
     },
     // 除popover外的区域不展示
     checkPopoverShow (e) {
-      console.log(e.target);
       if (this.$refs.popover && (this.$refs.popover === e.target || this.$refs.popover.contains(e.target))) return;
 
       if (this.$refs.popoverWrapper && (this.$refs.popoverWrapper === e.target || this.$refs.popoverWrapper.contains(e.target))) return;
@@ -131,7 +130,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
  $border-color: #333;
 $border-radius: 4px;
 

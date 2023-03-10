@@ -2,7 +2,7 @@
  * @Author: zhangchunjie8 zhangchunjie8@jd.com
  * @Date: 2023-02-09 18:25:48
  * @LastEditors: zhangchunjie8 zhangchunjie8@jd.com
- * @LastEditTime: 2023-03-08 11:00:32
+ * @LastEditTime: 2023-03-09 21:02:39
  */
 import Vue from 'vue';
 import WdIcon from '../packages/Icon/Icon.vue';
@@ -23,6 +23,8 @@ import WdTabsItem from '../packages/Tabs/TabsItem';
 import WdTabsBody from '../packages/Tabs/TabsBody';
 import WdTabsPane from '../packages/Tabs/TabsPane';
 import WdPopover from '../packages/Popover/Popover.vue';
+import WdCollspse from '../packages/Collapse/Collapse.vue';
+import WdCollspseItem from '../packages/Collapse/CollapseItem.vue'
 
 import plugin from '../packages/utils/plugin';
 
@@ -47,6 +49,8 @@ Vue.component(WdTabsItem.name, WdTabsItem);
 Vue.component(WdTabsBody.name, WdTabsBody);
 Vue.component(WdTabsPane.name, WdTabsPane);
 Vue.component(WdPopover.name, WdPopover);
+Vue.component(WdCollspse.name, WdCollspse);
+Vue.component(WdCollspseItem.name, WdCollspseItem);
 
 new Vue({
     el: '#app',
@@ -54,6 +58,7 @@ new Vue({
       loading: true,
       message: 'zcj',
       selected: 'article',
+      collapseselected: ['1'],
     },
     methods: {
       handleToastClick () {
@@ -72,5 +77,8 @@ new Vue({
       handleTabsChange(val) {
         console.log('==========', val);
       },
+      handleCollapseChange(val) {
+        console.log(val);
+      }
     },
 })

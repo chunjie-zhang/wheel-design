@@ -2,7 +2,7 @@
  * @Author: zhangchunjie8 zhangchunjie8@jd.com
  * @Date: 2023-02-09 18:25:48
  * @LastEditors: zhangchunjie8 zhangchunjie8@jd.com
- * @LastEditTime: 2023-03-08 21:29:03
+ * @LastEditTime: 2023-03-10 17:18:00
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -131,6 +131,20 @@
           <div>1111111111</div>
           <wd-button slot="reference">点 击</wd-button>
         </wd-popover>
+      </div>
+      <!--collapse组件-->
+      <div id="test6">
+        {{ collapseselected }}
+        <wd-collapse v-model="collapseselected" :single="false" @change="handleCollapseChange">
+          <wd-collapse-item name="1" disabled>
+            <div slot=title>11111111111</div>
+            内容1updateWdCollapseItemupdateWdCollapseItemupdateWdCollapseItem
+          </wd-collapse-item>
+          <wd-collapse-item title="标题2" name="2">内容2updateWdCollapseItemupdateWdCollapseItemupdateWdCollapseItem</wd-collapse-item>
+          <wd-collapse-item title="标题3" name="3">内容3updateWdCollapseItemupdateWdCollapseItemupdateWdCollapseItem</wd-collapse-item>
+          <wd-collapse-item title="标题4" name="4">内容4updateWdCollapseItemupdateWdCollapseItemupdateWdCollapseItem</wd-collapse-item>
+          <wd-collapse-item title="标题5" name="5">内容5updateWdCollapseItemupdateWdCollapseItemupdateWdCollapseItem</wd-collapse-item>
+        </wd-collapse>
       </div>
   </div>
   <script src="./src/app.js"></script>
