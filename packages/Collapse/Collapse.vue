@@ -2,7 +2,7 @@
  * @Author: zhangchunjie8 zhangchunjie8@jd.com
  * @Date: 2023-03-09 10:40:58
  * @LastEditors: zhangchunjie8 zhangchunjie8@jd.com
- * @LastEditTime: 2023-03-10 16:28:29
+ * @LastEditTime: 2023-03-10 17:40:22
 -->
 <template>
   <div class="wd-collapse">
@@ -66,11 +66,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
- $grey: #ddd;
-  $border-radius: 4px;
-  .wd-collapse {
-    border: 1px solid $grey;
-    border-radius: $border-radius;
-    margin-bottom: -1px;
-  }
+$grey: #ddd;
+$border-radius: 4px;
+.wd-collapse {
+  border: 1px solid $grey;
+  border-radius: $border-radius;
+  margin-bottom: -1px;
+}
 </style>
