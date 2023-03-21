@@ -2,11 +2,21 @@
  * @Author: zhangchunjie8 zhangchunjie8@jd.com
  * @Date: 2023-02-09 18:25:48
  * @LastEditors: zhangchunjie8 zhangchunjie8@jd.com
- * @LastEditTime: 2023-02-17 15:26:44
+ * @LastEditTime: 2023-03-21 10:56:14
 -->
 <template>
-   <button class="wd-button" :class="{[`wd-button__icon-${iconPosition}`]: iconPosition}" @click="$emit('click')">
-     <wd-icon v-if="icon || loading" class="wd-button__icon" :class="{'wd-button__loading': loading}" :name="!loading ? icon : 'loading'"></wd-icon>
+   <button
+     class="wd-button"
+     :class="{[`wd-button__icon-${iconPosition}`]: iconPosition}"
+     @click="$emit('click')"
+    >
+      <wd-icon
+        v-if="icon || loading"
+        class="wd-button__icon"
+        :class="{'wd-button__loading': loading}"
+        :name="!loading ? icon : 'loading'"
+      >
+      </wd-icon>
      <div class="wd-button__content">
        <slot></slot>
      </div>
@@ -44,6 +54,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../../style/var.scss';
+
 @keyframes loading {
   0% { transform: rotate(0deg)};
   100% { transform: rotate(360deg)};
@@ -53,19 +65,19 @@ export default {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  height: var(--button-height);
+  height: $button-height;
   padding: 0 1em;
   font: inherit;
   vertical-align: middle;
-  border: 1px solid var(--border-color);
-  border-radius: var(--border-radius);
-  background: var(--button-bg);
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  background: $button-bg;
   cursor: pointer;
   &:hover {
-    border-color: var(--border-color-hover);
+    border-color: $border-color-hover;
   }
   &:active {
-    background: var(--button-active-bg);
+    background: $button-active-bg;
   }
   &:focus {
     outline: none;

@@ -93,44 +93,29 @@ export default {
   $class: 'wd-col-';
   @for $n from 1 through 24 {
     &.#{$class}#{$n} {
-      width: calc($n / 24) * 100%; 
+      width: calc($n / 24); 
     }
   }
 
   $class: 'wd-col-offset-';
   @for $n from 1 through 24 {
     &.#{$class}#{$n} {
-      margin-left: calc($n / 24) * 100%; 
+      margin-left: calc($n / 24); 
     }
   }
 
-  // @media (max-width: 576px) {
-  //   $class: 'wd-col-phone-';
-  //   @for $n from 1 through 24 {
-  //     &.#{$class}#{$n} {
-  //       width: calc($n / 24) * 100%; 
-  //     }
-  //   }
-
-  //   $class: 'wd-col-phone-offset-';
-  //   @for $n from 1 through 24 {
-  //     &.#{$class}#{$n} {
-  //       margin-left: calc($n / 24) * 100%; 
-  //     }
-  //   }
-  // }
   @media (min-width: 577px) {
     $class: 'wd-col-ipad-';
     @for $n from 1 through 24 {
       &.#{$class}#{$n} {
-        width: calc($n / 24) * 100%; 
+        width: calc($n / 24); 
       }
     }
 
     $class: 'wd-col-ipad-offset-';
     @for $n from 1 through 24 {
       &.#{$class}#{$n} {
-        margin-left: calc($n / 24) * 100%; 
+        margin-left: calc($n / 24); 
       }
     }
   }
@@ -138,14 +123,14 @@ export default {
     $class: 'wd-col-arrow-pc-';
     @for $n from 1 through 24 {
       &.#{$class}#{$n} {
-        width: calc($n / 24) * 100%; 
+        width: calc($n / 24); 
       }
     }
 
     $class: 'wd-col-arrow-pc-offset-';
     @for $n from 1 through 24 {
       &.#{$class}#{$n} {
-        margin-left: calc($n / 24) * 100%; 
+        margin-left: calc($n / 24); 
       }
     }
   }
@@ -153,14 +138,14 @@ export default {
     $class: 'wd-col-pc-';
     @for $n from 1 through 24 {
       &.#{$class}#{$n} {
-        width: calc($n / 24) * 100%; 
+        width: calc($n / 24); 
       }
     }
 
     $class: 'wd-col-pc-offset-';
     @for $n from 1 through 24 {
       &.#{$class}#{$n} {
-        margin-left: calc($n / 24) * 100%; 
+        margin-left: calc($n / 24); 
       }
     }
   }
@@ -168,14 +153,14 @@ export default {
     $class: 'wd-col-wide-pc-';
     @for $n from 1 through 24 {
       &.#{$class}#{$n} {
-        width: calc($n / 24) * 100%; 
+        width: calc($n / 24); 
       }
     }
 
     $class: 'wd-col-wide-pc-offset-';
     @for $n from 1 through 24 {
       &.#{$class}#{$n} {
-        margin-left: calc($n / 24) * 100%; 
+        margin-left: calc($n / 24); 
       }
     }
   }

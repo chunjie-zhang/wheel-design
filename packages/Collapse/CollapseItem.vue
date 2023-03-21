@@ -2,7 +2,7 @@
  * @Author: zhangchunjie8 zhangchunjie8@jd.com
  * @Date: 2023-03-09 10:40:58
  * @LastEditors: zhangchunjie8 zhangchunjie8@jd.com
- * @LastEditTime: 2023-03-10 17:40:11
+ * @LastEditTime: 2023-03-17 14:45:07
 -->
 <template>
   <div class="wd-collapse-item" :class="{'wd-collapse-item-disabled': disabled}">

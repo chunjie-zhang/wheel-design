@@ -2,7 +2,7 @@
  * @Author: zhangchunjie8 zhangchunjie8@jd.com
  * @Date: 2023-02-09 18:25:48
  * @LastEditors: zhangchunjie8 zhangchunjie8@jd.com
- * @LastEditTime: 2023-02-17 15:27:28
+ * @LastEditTime: 2023-03-21 11:23:22
 -->
 <template>
   <i :class='`wd-icon-${name}`'></i>
@@ -20,5 +20,4 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-
 </style>
