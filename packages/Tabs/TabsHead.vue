@@ -2,7 +2,7 @@
  * @Author: zhangchunjie8 zhangchunjie8@jd.com
  * @Date: 2023-02-17 15:06:25
  * @LastEditors: zhangchunjie8 zhangchunjie8@jd.com
- * @LastEditTime: 2023-03-07 20:47:53
+ * @LastEditTime: 2023-03-21 11:40:53
 -->
 <template>
   <div class="wd-tabs-head" ref="head">
@@ -36,15 +36,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$tab-height: 40px;
-$blue: blue;
-$border-color: #ddd;
+@import '../../style/var.scss';
+
 .wd-tabs-head {
   display: flex;
   height: $tab-height;
   justify-content: flex-start;
   position: relative;
-  border-bottom: 1px solid $border-color;
+  border-bottom: 1px solid $tab-border-color;
   &__line {
     position: absolute;
     bottom: 0;

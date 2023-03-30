@@ -98,12 +98,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$font-size: 14px;
-$toast-min-height: 40px;
-$toast-background: rgba(0,0,0,0.75);
-$toast-border-radius: 4px;
-$toast-font-color: white;
-$toast-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.50);
+@import '../../style/var.scss';
 
 @keyframes fade-in-top {
   0% {

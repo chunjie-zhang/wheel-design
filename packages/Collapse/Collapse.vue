@@ -2,7 +2,7 @@
  * @Author: zhangchunjie8 zhangchunjie8@jd.com
  * @Date: 2023-03-09 10:40:58
  * @LastEditors: zhangchunjie8 zhangchunjie8@jd.com
- * @LastEditTime: 2023-03-10 17:40:22
+ * @LastEditTime: 2023-03-21 11:38:13
 -->
 <template>
   <div class="wd-collapse">
@@ -66,8 +66,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$grey: #ddd;
-$border-radius: 4px;
+@import '../../style/var.scss';
+
 .wd-collapse {
   border: 1px solid $grey;
   border-radius: $border-radius;

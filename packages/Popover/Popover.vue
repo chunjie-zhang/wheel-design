@@ -2,7 +2,7 @@
  * @Author: zhangchunjie8 zhangchunjie8@jd.com
  * @Date: 2023-03-08 10:48:48
  * @LastEditors: zhangchunjie8 zhangchunjie8@jd.com
- * @LastEditTime: 2023-03-09 18:35:51
+ * @LastEditTime: 2023-03-21 11:39:43
 -->
 <template>
   <div ref="popover" class="wd-popover">
@@ -131,8 +131,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
- $border-color: #333;
-$border-radius: 4px;
+@import '../../style/var.scss';
 
 .wd-popover {
   display: inline-block;

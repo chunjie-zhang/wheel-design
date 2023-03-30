@@ -2,7 +2,7 @@
  * @Author: zhangchunjie8 zhangchunjie8@jd.com
  * @Date: 2023-03-09 10:40:58
  * @LastEditors: zhangchunjie8 zhangchunjie8@jd.com
- * @LastEditTime: 2023-03-17 14:45:07
+ * @LastEditTime: 2023-03-21 11:38:24
 -->
 <template>
   <div class="wd-collapse-item" :class="{'wd-collapse-item-disabled': disabled}">
@@ -65,8 +65,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$grey: #ddd;
-$border-radius: 4px;
+@import '../../style/var.scss';
+
 .wd-collapse-item {
   &__title { border: 1px solid $grey; margin-top: -1px; margin-left: -1px; margin-right: -1px;
     min-height: 32px;

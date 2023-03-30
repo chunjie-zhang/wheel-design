@@ -2,7 +2,7 @@
  * @Author: zhangchunjie8 zhangchunjie8@jd.com
  * @Date: 2023-02-09 18:25:48
  * @LastEditors: zhangchunjie8 zhangchunjie8@jd.com
- * @LastEditTime: 2023-02-17 15:26:57
+ * @LastEditTime: 2023-03-21 11:37:33
 -->
 <template>
   <div class="wd-button-group">
@@ -25,6 +25,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../../style/var.scss';
+
 .wd-button-group {
   display: inline-flex;
 
@@ -35,12 +37,12 @@ export default {
     border-radius: 0;
 
     &:first-child {
-    border-top-left-radius: var(--border-radius);
-    border-bottom-left-radius: var(--border-radius);
+    border-top-left-radius: $border-radius;
+    border-bottom-left-radius: $border-radius;
     }
     &:last-child {
-      border-top-right-radius: var(--border-radius);
-      border-bottom-right-radius: var(--border-radius);
+      border-top-right-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
     }
     &:hover {
       position: relative;

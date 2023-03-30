@@ -2,7 +2,7 @@
  * @Author: zhangchunjie8 zhangchunjie8@jd.com
  * @Date: 2023-02-17 15:07:57
  * @LastEditors: zhangchunjie8 zhangchunjie8@jd.com
- * @LastEditTime: 2023-03-07 20:54:19
+ * @LastEditTime: 2023-03-21 11:42:38
 -->
 <template>
   <div class="wd-tabs-item" @click="onClick" :class="classes" :data-name="name">
@@ -55,8 +55,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
- $blue: blue;
-  $disabled-text-color: grey;
+@import '../../style/var.scss';
   .wd-tabs-item {
     flex-shrink: 0;
     padding: 0 1em;

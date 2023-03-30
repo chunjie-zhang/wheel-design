@@ -76,7 +76,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$tabs-default-color: #262626;
+@import '../../style/var.scss';
 .wd-tabs {
   // display: flex;
   // &__label {

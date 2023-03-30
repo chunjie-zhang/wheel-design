@@ -2,7 +2,7 @@
  * @Author: zhangchunjie8 zhangchunjie8@jd.com
  * @Date: 2023-02-09 18:25:48
  * @LastEditors: zhangchunjie8 zhangchunjie8@jd.com
- * @LastEditTime: 2023-02-17 15:27:45
+ * @LastEditTime: 2023-03-21 11:32:59
 -->
 <template>
   <div class="wd-input" :class="{error}">
@@ -49,21 +49,17 @@ export default {
 </script>
 
 <style lang="scss">
-  $height: 32px;
-  $border-color: #999;
-  $border-color-hover: #666;
-  $border-radius: 4px;
-  $font-size: 12px;
-  $box-shadow-color: rgba(0, 0, 0, 0.5);
-  $red: #F1453D;
+@import '../../style/var.scss';
+
   .wd-input { 
-    font-size: $font-size; display: inline-flex;
+    font-size: $font-size;
+    display: inline-flex;
     align-items: center;
     > :not(:last-child) {
       margin-right: .5em;
     }
     > input {
-      height: 32px;
+      height: $input-height;
       border: 1px solid $border-color; border-radius:
       4px; padding: 0 8px;
       font-size: inherit;
